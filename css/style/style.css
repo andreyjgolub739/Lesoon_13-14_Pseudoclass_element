@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* general - start */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 0 0 15px;
+}
+/* general - end */
+
+.header__wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.logo span{
+    text-transform: uppercase;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    font-size: 16px;
+    padding: 20px 0;
+}
+.btn:first-of-type a{
+    color: #262A30;
+}
+.btn__list li:first-of-type{
+    padding: 20px 31px;
+}
+.btn__list li:last-of-type{
+    padding: 20px 40px;
+    background-color: #519CFE;
+}
+.btn--color{
+    color: #fff;
+}
+.btn::first-letter{
+    text-transform: uppercase;
+}
+
+
+.box--left{
+    width: 63%;
+}
+.box--right{
+    width: 35%;
+}
+.main__wrap{
+    position: relative;
+    display: flex;
+    
+}
+.main__wrap::before{
+    content: '';
+    width: 70%;
+    height: 200%;
+    background-color: #519CFE;
+    display: block;
+    position: absolute;
+    z-index: -5;
+    border-radius: 80%;
+    filter: blur(100px);
+    transform: translate(-20%);
+    top: -200px;
+}
+.text__list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+}
+.text__item{
+    background-color: #fff;
+    padding: 8px 24px;
+    margin: 2px 0;
+}
+.text__item::first-letter{
+    text-transform: none;
+}
+.text__item span{
+    margin-left: 20px;
+    color: #596574;
+    opacity: 0.7;
+}
+.text__item span:nth-of-type(1){
+    margin-left: 0;
+}
+.text__item:first-of-type span:last-of-type,
+.text__item:nth-of-type(2) span:nth-of-type(2),
+.text__item:nth-of-type(3) span:first-of-type,
+.text__item:nth-of-type(4) span:nth-of-type(2),
+.text__item:nth-of-type(5) span:nth-of-type(3n),
+.text__item:nth-of-type(6) span:nth-of-type(2n),
+.text__item:nth-of-type(7) span:nth-of-type(2){
+    font-weight: 700;
+    color: #262A30;
+    opacity: 1;
+}
+h2{
+    font-size: 75px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 100%;
+    margin: 12px 0;
+}
+h2:not(.Fill){
+    -webkit-text-stroke-color:#fff;
+    -webkit-text-stroke-width: 1.2px;
+    color: transparent;
+}
+.text{
+    padding: 60px 70px 40px;
+}
+.text::before{
+    content: '';
+    width: 200px;
+    height: 120px;
+    background-color: #DCFD57;
+    display: block;
+    position: absolute;
+    z-index: -5;
+    border-radius: 80%;
+    filter: blur(50px);
+    right: 0;
+}
+.text p{
+    margin: 28px 0;
+    color: #262A30;
+}
+.text p a{
+    text-decoration: underline;
+    color: #262A30;
+}
+.register__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register{
+    margin-bottom: 80px;
+}
+.register__item{
+    background-color: #519CFE;
+    border: 1px solid #fff;
+    padding: 8px 24px;
+}
+.link:link{
+    color: #2938C7;
+}
+.link:visited{
+    color: #1A7E4E;
+}
+.link:hover{
+    color: #97AD0F;
+}
+.link:active{
+    color: #BB0707;
+}
+.register__item a{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.register__item span{
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 38px;
+}
+.register__item span:first-of-type{
+    margin-left: 0;
+}
+.register__item:first-of-type{
+    transform: rotate(-15deg);
+    position: relative;
+    top: 30px;
+}
+.register__item:last-of-type{
+    transform: rotate(8deg);
+}
+button{
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 700;
+    color: #262A30;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    left: 200px;
+}
+button::before{
+    content: '';
+    width: 200px;
+    height: 120px;
+    border-radius: 80%;
+    background-color: #DCFD57;
+    display: block;
+    position: absolute;
+    z-index: -5;
+    border-radius: 80%;
+    filter: blur(50px);
+    top: -30px;
+    transform: translate(40%);
+}
+button::after{
+    content: url("../img/Group\ 3.png");
+    position: absolute;
+    top: 0;
+    margin-left: 20px;
+}
+
+/* FOOTER - start */
+footer{
+    padding: 70px 0;
+}
+.link__list{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+.link__item{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+}
+.link__item a{
+    color: #262A30;
+}
+.link__item::after{
+    content: url("../img/Union.png");
+    position: absolute;
+    top: 0;
+    margin-left: 10px;
+}
